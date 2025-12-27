@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>طلب ترجمة</title>
+</head>
+<body>
+  <h1>الابجدية للترجمة</h1>
+
+  <form name="translation-form" method="POST" data-netlify="true" enctype="multipart/form-data">
+    <label>الاسم:</label>
+    <input type="text" name="name" required><br><br>
+
+    <label>رقم الهاتف:</label>
+    <input type="tel" name="phone" required><br><br>
+
+    <label>البريد الإلكتروني:</label>
+    <input type="email" name="email" required><br><br>
+
+    <label>تاريخ التسليم:</label>
+    <input type="date" name="delivery_date"><br><br>
+
+    <label>اختر اللغة:</label>
+    <select name="language">
+      <option>انكليزي-عربي</option>
+      <option>عربي-تركي</option>
+      <option>الماني-عربي</option>
+      <option>لغة أخرى</option>
+    </select><br><br>
+
+    <label>ارفع الوثيقة:</label>
+    <input type="file" name="file" required><br><br>
+
+    <button type="submit">ارسال</button>
+  </form>
+</body>
+</html>
